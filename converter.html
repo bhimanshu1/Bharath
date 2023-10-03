@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="converter.css">
+</head>
+<body>
+    <header class="heading">
+        <nav>
+            <div>
+                <a href="">Temperature <span class="logo">Converter</span></a>
+            </div>
+
+            <div>
+                <a href="">Home</a>
+                <a href="">Tools</a>
+                <a href="">Contact Us</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="converter_box">
+            <div class="from">
+                <div class="word">From</div>
+                <input type="text" placeholder="Enter the Value" name="num">
+                <div>
+                    <select name="q" id="" class="units">
+                        <option value="">Convert From (units)</option>
+                        <option value="">Celsius (&deg;C)</option>
+                        <option value="">Kelvin</option>
+                        <option value="">Fahrenheit (&deg;F)</option>
+                    </select>
+                </div>
+            </div>
+            <div class="to from">
+                <div class="word">To</div>
+                <input type="text" placeholder="Result">
+                <div>
+                    <select name="q" id="" class="units">
+                        <option value="">Convert To (units)</option>
+                        <option value="celsius">Celsius (&deg;C)</option>
+                        <option value="kelvin">Kelvin</option>
+                        <option value="heit">Fahrenheit (&deg;F)</option>
+                    </select>
+                </div>
+            </div>
+            <button class="result">Enter</button>
+        </section>
+    </main>
+    <!-- WARNING SCRIPT HERE -->
+    <script src="converter.js"></script>
+</body>
+</html>
