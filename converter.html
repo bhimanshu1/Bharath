@@ -24,21 +24,21 @@
         <section class="converter_box">
             <div class="from">
                 <div class="word">From</div>
-                <input type="text" placeholder="Enter the Value" name="num">
+                <input type="text" id="input_1" placeholder="Enter the Value" name="num">
                 <div>
-                    <select name="q" id="" class="units">
+                    <select name="q" id="select_1" class="units">
                         <option value="">Convert From (units)</option>
-                        <option value="">Celsius (&deg;C)</option>
-                        <option value="">Kelvin</option>
-                        <option value="">Fahrenheit (&deg;F)</option>
+                        <option value="celsius">Celsius (&deg;C)</option>
+                        <option value="kelvin">Kelvin</option>
+                        <option value="heit">Fahrenheit (&deg;F)</option>
                     </select>
                 </div>
             </div>
             <div class="to from">
                 <div class="word">To</div>
-                <input type="text" placeholder="Result">
+                <input type="text" placeholder="Result" id="input_2">
                 <div>
-                    <select name="q" id="" class="units">
+                    <select name="q" id="select_2" class="units">
                         <option value="">Convert To (units)</option>
                         <option value="celsius">Celsius (&deg;C)</option>
                         <option value="kelvin">Kelvin</option>
