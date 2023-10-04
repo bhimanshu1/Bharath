@@ -8,28 +8,54 @@ let secondInput = document.querySelector("#input_2")
 
 function celsiusToAny(temp, unit){
     if (unit === "kelvin"){
-        return parseInt(temp) + kelvin
+        return Math.round(parseInt(temp) + kelvin)
     }
-    return (parseInt(temp)*1.8) + heit
+    return Math.round((parseInt(temp)*1.8) + heit)
+}
+
+function kelvinToAny(temp, unit){
+    if (unit === "celsius"){
+        return Math.round(parseInt(temp) - kelvin)
+    }
+    return Math.round((parseInt(temp)*1.8) - 459.67)
+}
+
+function heitToAny(temp, unit){
+    if (unit === "celsius"){
+        return Math.round((parseInt(temp)*0.555555) - 17.777777)
+    }
+    return Math.round((parseInt(temp)*0.555556) + 255.372222)
 }
 
 let firstSelect = document.querySelector("#select_1")
 let secondSelect = document.querySelector("#select_2")
 let button = document.querySelector("button")
 
-firstInput.addEventListener("change", ()=>{
+button.addEventListener("click", ()=>{
     if (firstSelect.value === "celsius"){
         if (firstSelect.value === secondSelect.value){
-            console.log("hello")
             secondInput.value = firstInput.value
         }
-        else if (secondSelect.value === "kelvin" || secondSelect.value === "Faherenheit"){
+        else if (secondSelect.value === "kelvin" || secondSelect.value === "heit"){
             secondInput.value = celsiusToAny(firstInput.value, secondSelect.value)
         }
+    }else if(firstSelect.value === "kelvin"){
+        if (firstSelect.value === secondSelect.value){
+            secondInput.value = firstInput.value
+        }
+        else if(secondSelect.value === "celsius" || secondSelect.value === "heit"){
+            secondInput.value = kelvinToAny(firstInput.value, secondSelect.value)
+        }
+    }else if(firstSelect.value === "heit"){
+        if (firstSelect.value === secondSelect.value){
+            secondInput.value = firstInput.value
+        }else if(secondSelect.value === "celsius" || secondSelect.value === "kelvin"){
+            secondInput.value = heitToAny(firstInput.value, secondSelect.value)
+        }
     }
-
-   
-    
+    // else{
+    //     console.log("helloo")
+    // }
 })
 
 firstSelect.addEventListener("click", () =>{

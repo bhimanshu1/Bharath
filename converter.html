@@ -24,7 +24,7 @@
         <section class="converter_box">
             <div class="from">
                 <div class="word">From</div>
-                <input type="text" id="input_1" placeholder="Enter the Value" name="num">
+                <input type="number" required id="input_1" placeholder="Enter the Value" name="num">
                 <div>
                     <select name="q" id="select_1" class="units">
                         <option value="">Convert From (units)</option>
@@ -36,7 +36,7 @@
             </div>
             <div class="to from">
                 <div class="word">To</div>
-                <input type="text" placeholder="Result" id="input_2">
+                <input type="text" disabled placeholder="Result" id="input_2">
                 <div>
                     <select name="q" id="select_2" class="units">
                         <option value="">Convert To (units)</option>
@@ -48,6 +48,7 @@
             </div>
             <button class="result">Enter</button>
         </section>
+        <div class="note"><span>NOTE</span> : the results are rounded-off to the nearest integer</div>
     </main>
     <!-- WARNING SCRIPT HERE -->
     <script src="converter.js"></script>
