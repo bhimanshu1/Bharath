@@ -31,7 +31,8 @@ let firstSelect = document.querySelector("#select_1")
 let secondSelect = document.querySelector("#select_2")
 let button = document.querySelector("button")
 
-button.addEventListener("click", ()=>{
+button.addEventListener("click", (evt)=>{
+    evt.preventDefault()
     if (firstSelect.value === "celsius"){
         if (firstSelect.value === secondSelect.value){
             secondInput.value = firstInput.value
