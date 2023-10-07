@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    /* background-size: contain; */
+    position: relative;
+}
+
+.back-image{
+    width: 30rem;
+    height: 15rem;
+    background-image: url(https://th.bing.com/th/id/OIP.3guoBBtq1D1pcWZ8MxG_2QAAAA?pid=ImgDet&rs=1);
+    background-repeat: no-repeat;
+    /* background-position: contain; */
+    /* position:absolute;
+    top: 10rem;left: 26rem; */
+}
+
+
+.ceil{
+    display: flex;
+    /* width: 100%; */
+    height: 4rem;
+    /* background-color: gray; */
+    padding: 4px;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ced4da;
+}
+
+.logo:hover{
+    cursor: pointer;
+    color: #6c757d;
+}
+
+.nav-bar{
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 2rem;
+}
+
+.nav-bar span{
+    color: #ced4da;
+    font-size: 1.302rem;
+    font-family: 'VT323', monospace;
+}
+
+.nav-bar a{
+    text-decoration: none;
+    padding: 5px;
+}
+
+.nav-bar span:hover{
+    color: #6c757d;
+    cursor: pointer;
+    /* border-bottom: 1px solid #ced4da; */
+}
+
+.base{
+    width: 0rem;
+    /* height: 1px; */
+    background-color: #ced4da;
+}
+
+.bro{
+    width: 2rem;
+    height: 2px;
+    background-color: #ced4da;
+}
+
+.logo span{
+    font-size: 2.2rem;
+    color: #ced4da;
+    font-family: 'VT323', monospace;
+    font-weight: 500;
+}
+
+.main-cont{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-cont2{
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* align-items: center; */
+    flex-direction: column;
+    position: relative;
+    /* padding: 2rem; */
+}
+
+.main-cont2 section{
+    width: 40%;
+    height: 100vh;
+}
+
+.sec-1{
+    /* background-color: grey; */
+    background-image: url(https://i.pinimg.com/originals/ce/b9/cc/ceb9cc28f126d83ff062524154cee013.jpg);
+    background-repeat: no-repeat;
+    position: relative;
+    /* top: -3rem; */
+    height: 3rem;
+    background-size: contain;
+    margin: 1px;
+    color: #ced4da;
+}
+
+.sec-1 .small-box{
+    position: absolute;
+    top: 15rem;
+    width: 100%;
+    height: 50%;
+    color: #ced4da;
+    font-family: 'VT323', monospace;
+    font-size: 1.3rem;
+}
+
+.big-name{
+    font-size: 2rem;
+    /* font-weight: bold; */
+}
+
+.snd-name{
+    font-size: 1.4rem;
+    padding: 5px 0 8px;
+}
