@@ -1,6 +1,4 @@
-let celsius = 0
-let kelvin = 273.15
-let heit = 32
+
 let unit = null
 
 let firstInput = document.querySelector("#input_1")
@@ -8,14 +6,14 @@ let secondInput = document.querySelector("#input_2")
 
 function celsiusToAny(temp, unit){
     if (unit === "kelvin"){
-        return Math.round(parseInt(temp) + kelvin)
+        return Math.round(parseInt(temp) + 273.15)
     }
-    return Math.round((parseInt(temp)*1.8) + heit)
+    return Math.round((parseInt(temp)*1.8) + 32)
 }
 
 function kelvinToAny(temp, unit){
     if (unit === "celsius"){
-        return Math.round(parseInt(temp) - kelvin)
+        return Math.round(parseInt(temp) - 273.15)
     }
     return Math.round((parseInt(temp)*1.8) - 459.67)
 }
