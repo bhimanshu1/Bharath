@@ -152,7 +152,7 @@ footer{
 }
 
 footer div{
-    width: 40%;
+    width: 25%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -164,7 +164,7 @@ footer div img:hover{
 }
 footer i{
     color: #ced4da;
-    transition: all 0.3s linear;
+    transition: all 0.2s linear;
 }
 
 footer i:hover{
