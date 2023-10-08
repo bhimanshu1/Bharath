@@ -142,3 +142,31 @@ body{
     font-size: 1.4rem;
     padding: 5px 0 8px;
 }
+
+footer{
+    height: 10vh;
+    color: #ced4da;
+    display: flex;
+    justify-content: center;
+
+}
+
+footer div{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: #6c757d; */
+}
+
+footer div img:hover{
+    color: #6c757d;
+}
+footer i{
+    color: #ced4da;
+    transition: all 0.3s linear;
+}
+
+footer i:hover{
+    color: #6c757d;
+}
